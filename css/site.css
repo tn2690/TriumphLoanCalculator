@@ -24,6 +24,15 @@ body {
   margin-top: 4.75rem;
 }
 
+/* background image */
+.bgImage {
+  background: linear-gradient(rgba(165, 243, 145, 0.9), rgba(245, 243, 243, 0.7)), url("/img/loanbackground2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 footer {
   flex-shrink: 0;
 }
@@ -87,3 +96,16 @@ footer {
 }
 
 /* set max width */
+
+.h1, .h3{
+  font-style: italic;
+}
+
+.rowData {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.formBold {
+  font-weight: bold;
+}

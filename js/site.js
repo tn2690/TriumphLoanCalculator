@@ -17,8 +17,7 @@ function getValues() {
     termInMonths = parseInt(termInMonths);
     interestRate = parseFloat(interestRate);
 
-    // validate inputs
-    // 
+    // validate inputs 
     if ((!isNaN(loanAmount) && !isNaN(termInMonths) && !isNaN(interestRate)) && (loanAmount > 0 && termInMonths > 0 && interestRate > 0)) {
         // store monthly payment result
         let monthlyPaymentResult = calculateTotalMonthlyPayment(loanAmount, termInMonths, interestRate);
@@ -113,7 +112,7 @@ function calculateMonthlyRemainingBalance(remainingBal, principalPaymentResult) 
 
     monthlyBal = remainingBal - principalPaymentResult;
     
-    return monthlyBal;
+    return Math.abs(monthlyBal);
 }
 
 // calculate total interest of all months
